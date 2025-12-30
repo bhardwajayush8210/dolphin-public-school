@@ -56,7 +56,7 @@ export default function Hero() {
           <div className="bg-gradient-to-br from-amber-100 to-orange-200 rounded-2xl h-96 md:h-[500px] flex items-center justify-center overflow-hidden group shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-shimmer" />
             <img
-              src="/diverse-group-of-students-studying-together-in-a-m.jpg"
+              src="/campus.jpg"
               alt="Students learning"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />

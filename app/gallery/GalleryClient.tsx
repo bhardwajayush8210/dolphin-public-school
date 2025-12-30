@@ -3,15 +3,15 @@
 import { useState } from "react"
 
 const galleryImages = [
-  { category: "Events", title: "Annual Sports Day 2024", image: "/sports-day-event.jpg" },
-  { category: "Academics", title: "Science Fair", image: "/science-fair-event.jpg" },
-  { category: "Campus", title: "Campus Building", image: "/school-building.jpg" },
-  { category: "Events", title: "Annual Day", image: "/annual-day-celebration.jpg" },
-  { category: "Activities", title: "Art Workshop", image: "/art-workshop.jpg" },
-  { category: "Academics", title: "Class Activity", image: "/classroom-activity.jpg" },
-  { category: "Campus", title: "Library", image: "/school-library.jpg" },
-  { category: "Activities", title: "Cultural Program", image: "/cultural-program.jpg" },
-  { category: "Events", title: "Graduation Day", image: "/graduation-ceremony.jpg" },
+  // { category: "Events", title: "Annual Sports Day 2024", image: "/sports-day-event.jpg" },
+  { category: "Academics", title: "Science Fair", image: "/science.jpg" },
+  { category: "Campus", title: "Campus Building", image: "/campus.jpg" },
+  { category: "Events", title: "Annual Day", image: "/annual.jpg" },
+  { category: "Activities", title: "Art Workshop", image: "/art.jpg" },
+  { category: "Academics", title: "Class Activity", image: "/class.jpg" },
+  { category: "Campus", title: "Library", image: "/lib.jpg" },
+  { category: "Activities", title: "Cultural Program", image: "/cultural.jpg" },
+  // { category: "Events", title: "Graduation Day", image: "/graduation-ceremony.jpg" },
 ]
 
 export default function GalleryClient() {
