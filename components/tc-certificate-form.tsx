@@ -288,7 +288,7 @@ export default function TCCertificateForm() {
             </div>
           </div>
 
-          <div>
+          {/* <div>
             <label className="block text-sm font-medium text-slate-700 mb-2">Upload Reference Image (Optional)</label>
             <div
               onClick={() => fileInputRef.current?.click()}
@@ -302,7 +302,7 @@ export default function TCCertificateForm() {
               )}
             </div>
             <input ref={fileInputRef} type="file" onChange={handleFileChange} accept="image/*" className="hidden" />
-          </div>
+          </div> */}
         </div>
       </div>
 
