@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
@@ -19,20 +20,25 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white/98 backdrop-blur-md border-b border-slate-200">
+    <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-700 to-blue-900 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">DPS</span>
-            </div>
-            <span className="font-bold text-lg text-slate-900 hidden sm:inline">
+        <div className="flex items-center justify-between h-16">
+          {/* ===== LOGO ===== */}
+          <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/logo2.png" // 👈 your school logo
+              alt=""
+              width={200}
+              height={500}
+              className="object-contain"
+              priority
+            />
+            {/* <span className="hidden sm:block font-bold text-lg text-slate-900">
               Dolphin Public School
-            </span>
+            </span> */}
           </Link>
 
-          {/* Desktop Menu */}
+          {/* ===== DESKTOP MENU ===== */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
@@ -41,7 +47,7 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`relative font-medium text-sm transition-colors
+                  className={`relative text-sm font-medium transition-colors
                     ${
                       isActive
                         ? "text-amber-600"
@@ -51,7 +57,6 @@ export default function Navbar() {
                 >
                   {item.label}
 
-                  {/* Active underline */}
                   <span
                     className={`absolute left-0 -bottom-1 h-[2px] bg-amber-500 transition-all duration-300
                       ${isActive ? "w-full" : "w-0 group-hover:w-full"}
@@ -62,25 +67,25 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* CTA */}
+          {/* ===== DESKTOP CTA ===== */}
           <div className="hidden md:block">
             <Link
               href="/contact"
-              className="px-6 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-full transition-all hover:shadow-lg"
+              className="px-6 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-full transition shadow-md"
             >
               Enquire Now
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2">
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {/* ===== MOBILE MENU BUTTON ===== */}
+          <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* ===== MOBILE MENU ===== */}
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-2">
+          <div className="md:hidden mt-3 pb-4 space-y-2">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
 
@@ -89,7 +94,7 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-4 py-2 rounded-lg transition
+                  className={`block px-4 py-2 rounded-lg text-sm
                     ${
                       isActive
                         ? "bg-amber-100 text-amber-700 font-semibold"
@@ -104,7 +109,8 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="block px-4 py-2 bg-amber-500 text-white rounded-lg mt-2"
+              onClick={() => setIsOpen(false)}
+              className="block text-center px-4 py-2 bg-amber-500 text-white rounded-lg mt-2"
             >
               Enquire Now
             </Link>
