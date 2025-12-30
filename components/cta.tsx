@@ -16,12 +16,12 @@ export default function CTA() {
             >
               Get Started Today
             </Link>
-            <Link
+            {/* <Link
               href="/faculty"
               className="px-8 py-3 border-2 border-white text-white rounded-full hover:bg-white/10 transition-all hover:scale-105 font-semibold"
             >
               Meet Our Team
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

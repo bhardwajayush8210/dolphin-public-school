@@ -180,7 +180,7 @@ export default function TCCertificateForm() {
         </div>
       </div>
 
-      {/* Parent Information */}
+      {/* Parent Information
       <div>
         <h3 className="text-lg font-bold text-blue-900 mb-4 pb-2 border-b border-slate-200">Parent Information</h3>
 
@@ -239,7 +239,7 @@ export default function TCCertificateForm() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Additional Information */}
       <div>

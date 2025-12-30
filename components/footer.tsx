@@ -12,7 +12,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
                 <span className="font-bold text-lg">SA</span>
               </div>
-              <span className="font-bold text-lg">Stellar Academy</span>
+              <span className="font-bold text-lg">Dolphin Public School</span>
             </div>
             <p className="text-slate-400 text-sm">Inspiring minds and shaping futures through quality education</p>
           </div>
@@ -76,7 +76,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm">
-          <p>&copy; 2025 Stellar Academy. All rights reserved.</p>
+          <p>&copy; 2025 Dolphin Public School. All rights reserved.</p>
         </div>
       </div>
     </footer>

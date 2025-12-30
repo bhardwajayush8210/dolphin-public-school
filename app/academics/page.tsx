@@ -19,18 +19,18 @@ const programs = [
     description: "Enhanced curriculum with introduction to advanced concepts and scientific thinking",
     subjects: ["Mathematics", "Science", "English", "Hindi", "Social Studies", "IT Basics"],
   },
-  {
-    title: "Secondary (Classes IX-X)",
-    icon: Flask,
-    description: "CBSE board preparation with focus on critical thinking and practical application",
-    subjects: ["Mathematics", "Science", "English", "Hindi", "Social Studies", "Electives"],
-  },
-  {
-    title: "Senior Secondary (Classes XI-XII)",
-    icon: Music,
-    description: "Specialized streams: Science, Commerce, and Humanities with college preparation",
-    subjects: ["Stream-specific subjects", "Competitive exam prep", "Career counseling"],
-  },
+  // {
+  //   title: "Secondary (Classes IX-X)",
+  //   icon: Flask,
+  //   description: "CBSE board preparation with focus on critical thinking and practical application",
+  //   subjects: ["Mathematics", "Science", "English", "Hindi", "Social Studies", "Electives"],
+  // },
+  // {
+  //   title: "Senior Secondary (Classes XI-XII)",
+  //   icon: Music,
+  //   description: "Specialized streams: Science, Commerce, and Humanities with college preparation",
+  //   subjects: ["Stream-specific subjects", "Competitive exam prep", "Career counseling"],
+  // },
 ]
 
 export default function AcademicsPage() {
