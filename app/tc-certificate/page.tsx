@@ -24,7 +24,7 @@ export default function TCCertificatePage() {
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 animate-fade-in-up">Transfer Certificate</h1>
           <p className="text-slate-600 text-lg max-w-2xl animate-fade-in-up delay-100">
             Request your Transfer Certificate easily. Fill in your details below and we'll process your request.
-          </p>
+           </p>
         </div>
       </div>
 

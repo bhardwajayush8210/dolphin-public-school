@@ -37,7 +37,7 @@ export default function AcademicsPage() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 text-balance">
             Academic <span className="text-blue-600">Programs</span>
@@ -46,7 +46,7 @@ export default function AcademicsPage() {
             Comprehensive CBSE and ICSE curriculum designed for academic excellence
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Programs Grid */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">

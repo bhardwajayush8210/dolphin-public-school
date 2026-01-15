@@ -28,7 +28,7 @@ export default function AboutPage() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 text-balance">
             About <span className="text-blue-600">Dolphin Public School</span>
@@ -37,7 +37,7 @@ export default function AboutPage() {
             For over two decades, we've been at the forefront of educational excellence in India
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission & Vision */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">

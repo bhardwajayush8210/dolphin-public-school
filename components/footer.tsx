@@ -68,7 +68,7 @@ export default function Footer() {
             <ul className="space-y-3 text-slate-400 text-sm">
               <li className="flex items-center gap-2">
                 <Phone size={16} />
-                +91 12345 67890
+                +91 9999631657
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} />
@@ -76,7 +76,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin size={16} className="mt-1" />
-                123 Education Lane, Metro City
+                Old Faridabad bassa para, Faridabad 121002
               </li>
             </ul>
           </div>

@@ -5,7 +5,7 @@ import { useState } from "react"
 const galleryImages = [
   // { category: "Events", title: "Annual Sports Day 2024", image: "/sports-day-event.jpg" },
   { category: "Academics", title: "Science Fair", image: "/science.jpg" },
-  { category: "Campus", title: "Campus Building", image: "/campus.jpg" },
+  // { category: "Campus", title: "Campus Building", image: "/campus.jpg" },
   { category: "Events", title: "Annual Day", image: "/annual.jpg" },
   { category: "Activities", title: "Art Workshop", image: "/art.jpg" },
   { category: "Academics", title: "Class Activity", image: "/class.jpg" },
@@ -26,7 +26,7 @@ export default function GalleryClient() {
   return (
     <main className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 text-balance">
             Photo <span className="text-blue-600">Gallery</span>
@@ -35,7 +35,7 @@ export default function GalleryClient() {
             Moments from our vibrant campus life and memorable events
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Filter Buttons */}
       <section className="py-12 px-4 sm:px-6 lg:px-8">
